@@ -106,7 +106,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               href={site.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 font-medium text-slate-700 transition-colors hover:border-blue-200 hover:text-[color:var(--accent)]"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 font-medium text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] active:translate-y-0 active:scale-[0.985] hover:border-blue-200 hover:text-[color:var(--accent)]"
             >
               GitHub
               <ArrowUpRight className="h-4 w-4" />
@@ -115,7 +115,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               href={site.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 font-medium text-slate-700 transition-colors hover:border-blue-200 hover:text-[color:var(--accent)]"
+              className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 font-medium text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] active:translate-y-0 active:scale-[0.985] hover:border-blue-200 hover:text-[color:var(--accent)]"
             >
               <img src="/linkedin.webp" alt="LinkedIn" width={18} height={18} className="h-4 w-4" />
               LinkedIn

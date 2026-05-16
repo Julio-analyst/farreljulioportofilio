@@ -22,7 +22,7 @@ export default function OtherActivityPage() {
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {activityPillars.map((item, index) => (
           <AnimatedReveal key={item.title} delay={index * 0.07}>
-            <div className="glass-card h-full rounded-[2rem] p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100">
+            <div className="glass-card h-full rounded-[2rem] p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-[0.985] hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[color:var(--accent-soft)] text-[color:var(--accent)]">
                 {index === 0 ? <NotebookPen className="h-5 w-5" /> : null}
                 {index === 1 ? <Users className="h-5 w-5" /> : null}
