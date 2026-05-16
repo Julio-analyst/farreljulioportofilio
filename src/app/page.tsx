@@ -5,6 +5,7 @@ import { ArrowRight, BookOpenText, BrainCircuit, Code2, FileDown, Sparkles } fro
 import { AnimatedReveal } from "@/components/animated-reveal";
 import { featuredProjects, heroStats, site, whatPeopleSayAboutMe } from "@/data/portfolio";
 import LocalizedText from "@/components/localized-text";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -18,14 +19,19 @@ export default function Home() {
             </p>
             <div className="space-y-4">
               <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                  <LocalizedText
-                    id={`Hi, saya ${site.name}. Saya fokus pada branding profesional untuk data science, data engineering, AI & automation, machine learning, dan cloud analytics.`}
-                    en={`Hi, I'm ${site.name}. I focus on professional branding for data science, data engineering, AI & automation, machine learning, and cloud analytics.`}
-                  />
+                <LocalizedText id={`Hi, saya ${site.name}`} en={`Hi, I'm ${site.name}`} />
               </h1>
-                  <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--muted)]">
-                    <LocalizedText id={site.tagline} en={site.taglineEn} />
-                  </p>
+
+              <p className="mt-2 max-w-3xl text-lg sm:text-xl lg:text-2xl font-medium text-slate-800">
+                <LocalizedText
+                  id={`Saya fokus membangun sistem cerdas melalui data, otomasi, dan rekayasa strategis.`}
+                  en={`I focus on building intelligent systems through data, automation, and strategic engineering.`}
+                />
+              </p>
+
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-[color:var(--muted)]">
+                <LocalizedText id={site.tagline} en={site.taglineEn} />
+              </p>
             </div>
           </div>
 
@@ -51,7 +57,7 @@ export default function Home() {
               href="https://sd.itera.ac.id/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-[4.75rem] items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-white/85 px-4 py-3 text-sm font-medium text-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:text-[color:var(--accent)]"
+              className="inline-flex min-h-[4.75rem] items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-white/85 px-4 py-3 text-sm font-medium text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-[0.985] hover:border-blue-200 hover:text-[color:var(--accent)]"
             >
               <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
                 <img src="/logo-sains%20data%20itera.png?v=2" alt="Logo Sains Data ITERA" width={40} height={40} className="h-10 w-10 rounded-2xl object-cover" />
@@ -66,7 +72,7 @@ export default function Home() {
               href="https://www.telkom.co.id/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-[4.75rem] items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-white/85 px-4 py-3 text-sm font-medium text-slate-800 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:text-[color:var(--accent)]"
+              className="inline-flex min-h-[4.75rem] items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-white/85 px-4 py-3 text-sm font-medium text-slate-800 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-[0.985] hover:border-blue-200 hover:text-[color:var(--accent)]"
             >
               <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
                 <img src="/logo_telkom.svg" alt="Logo Telkom Indonesia" width={40} height={40} className="h-10 w-10 rounded-2xl object-contain" />
@@ -127,25 +133,6 @@ export default function Home() {
                   <p className="mt-2 font-medium text-slate-950">Internship, collaboration, project work</p>
                 </div>
               </div>
-
-              <div className="rounded-3xl border border-[color:var(--border)] bg-white/90 p-4">
-                <div className="flex items-center gap-2 text-sm font-medium text-slate-800">
-                  <BrainCircuit className="h-4 w-4 text-[color:var(--accent)]" />
-                  What people say about me
-                </div>
-                <div className="mt-3 grid gap-3">
-                  {whatPeopleSayAboutMe.map((item) => (
-                    <div key={item.title} className="rounded-2xl border border-blue-100 bg-blue-50/70 p-3">
-                      <p className="text-sm font-semibold text-slate-950">
-                        <LocalizedText id={item.title} en={item.titleEn} />
-                      </p>
-                      <p className="mt-1 text-sm leading-6 text-[color:var(--muted)]">
-                        <LocalizedText id={item.description} en={item.descriptionEn} />
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </AnimatedReveal>
@@ -163,7 +150,7 @@ export default function Home() {
               </div>
               <Link
                 href="/portfolio"
-                className="hidden items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:text-[color:var(--accent)] sm:inline-flex"
+                className="hidden items-center gap-2 rounded-full border border-[color:var(--border)] bg-white px-4 py-2 text-sm font-medium text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.02] active:translate-y-0 active:scale-[0.985] hover:text-[color:var(--accent)] sm:inline-flex"
               >
                 <LocalizedText id={"View all"} en={"View all"} />
                 <ArrowRight className="h-4 w-4" />
@@ -214,7 +201,22 @@ export default function Home() {
             </div>
           </div>
         </AnimatedReveal>
+      </section>
 
+      <section className="mt-6">
+        <AnimatedReveal>
+          <div className="glass-card rounded-[2rem] p-6 sm:p-8">
+            <div className="mb-6">
+              <p className="text-sm font-medium text-[color:var(--accent)]">What people say</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">What people say about me</h2>
+            </div>
+
+            <Testimonials items={whatPeopleSayAboutMe as any} />
+          </div>
+        </AnimatedReveal>
+      </section>
+
+      <section className="grid gap-6 lg:grid-cols-3">
         <AnimatedReveal delay={0.12}>
           <div className="glass-card flex h-full flex-col justify-between rounded-[2rem] p-6 sm:p-8">
             <div className="space-y-4">
@@ -249,7 +251,7 @@ export default function Home() {
                   <Link
                     key={item.title}
                     href={item.href}
-                    className="flex items-start gap-3 rounded-2xl border border-[color:var(--border)] bg-white/90 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/60"
+                    className="flex items-start gap-3 rounded-2xl border border-[color:var(--border)] bg-white/90 p-4 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:border-blue-200 hover:bg-blue-50/60 active:translate-y-0 active:scale-[0.985]"
                   >
                     <div className="rounded-2xl bg-[color:var(--accent-soft)] p-3 text-[color:var(--accent)]">
                       <item.icon className="h-4 w-4" />
@@ -274,7 +276,7 @@ export default function Home() {
                 <p className="mt-2 text-lg font-semibold">
                   <LocalizedText id={"Open to internship and project collaboration."} en={"Open to internship and project collaboration."} />
                 </p>
-              <Link href={`mailto:${site.email}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white">
+                <Link href={`mailto:${site.email}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-white transition-all duration-300 hover:translate-x-0.5 active:scale-[0.98]">
                 <LocalizedText id={"Send email"} en={"Send email"} />
                 <ArrowRight className="h-4 w-4" />
               </Link>

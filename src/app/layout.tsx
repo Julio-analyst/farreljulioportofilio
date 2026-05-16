@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   },
   description:
     "Portfolio bilingual white-blue dengan fokus AI, data pipelines, analytics, dan project showcase.",
+  icons: {
+    icon: "/Farrellogo.png",
+    shortcut: "/Farrellogo.png",
+    apple: "/Farrellogo.png",
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +38,11 @@ export default function RootLayout({
       lang="en"
       className={`${jakarta.variable} ${spaceGrotesk.variable} h-full scroll-smooth antialiased`}
     >
+      <head>
+        <link rel="icon" href="/Farrellogo.png" />
+        <link rel="shortcut icon" href="/Farrellogo.png" />
+        <link rel="apple-touch-icon" href="/Farrellogo.png" />
+      </head>
       <body className="min-h-full bg-background text-foreground">
         <LanguageProvider>
           <SiteShell>{children}</SiteShell>

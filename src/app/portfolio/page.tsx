@@ -24,7 +24,7 @@ export default function PortfolioPage() {
       <section className="grid gap-5">
         {featuredProjects.map((project, index) => (
           <AnimatedReveal key={project.title} delay={index * 0.08}>
-            <Link href={project.href} target="_blank" rel="noreferrer" className="group block">
+            <Link href={project.href} target="_blank" rel="noreferrer" className="group block transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-[0.985]">
               <HoverCard className="glass-card rounded-[2rem] p-6 transition-all duration-300 sm:p-7">
                 <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
                   <div className="max-w-3xl space-y-4">
@@ -102,7 +102,7 @@ export default function PortfolioPage() {
 
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {group.repos.map((repo) => (
-                    <Link key={repo.name} href={repo.href} target="_blank" rel="noreferrer" className="group">
+                    <Link key={repo.name} href={repo.href} target="_blank" rel="noreferrer" className="group transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-[0.985]">
                       <HoverCard className="rounded-3xl border border-[color:var(--border)] bg-white/90 p-5 transition-all duration-300">
                         <div className="space-y-3">
                           <div className="flex items-start justify-between gap-4">
@@ -130,47 +130,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-        <AnimatedReveal>
-          <div className="glass-card h-full rounded-[2rem] p-6">
-            <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-              <Code2 className="h-4 w-4" />
-              <LocalizedText id={"Case study format"} en={"Case study format"} />
-            </div>
-            <p className="mt-4 text-sm leading-7 text-[color:var(--muted)]">
-              <LocalizedText id={"Saat kamu menambah project baru, pakai format ini agar portfolio tetap mudah dibaca:"} en={"When adding a new project, use this format so the portfolio remains easy to read:"} />
-            </p>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-[color:var(--muted)]">
-              <li>• <LocalizedText id={"Problem or opportunity"} en={"Problem or opportunity"} /></li>
-              <li>• <LocalizedText id={"Why this approach"} en={"Why this approach"} /></li>
-              <li>• <LocalizedText id={"Tech stack"} en={"Tech stack"} /></li>
-              <li>• <LocalizedText id={"Output / result"} en={"Output / result"} /></li>
-              <li>• <LocalizedText id={"Link to demo or repo"} en={"Link to demo or repo"} /></li>
-            </ul>
-          </div>
-        </AnimatedReveal>
-
-        <AnimatedReveal delay={0.1}>
-          <div className="glass-card h-full rounded-[2rem] p-6">
-              <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-              <Sparkles className="h-4 w-4" />
-              <LocalizedText id={"Suggested additions"} en={"Suggested additions"} />
-            </div>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {[
-                { id: "Project screenshots", en: "Project screenshots" },
-                { id: "Short demo video", en: "Short demo video" },
-                { id: "Problem/solution bullets", en: "Problem/solution bullets" },
-                { id: "Impact metrics", en: "Impact metrics" },
-              ].map((item) => (
-                <div key={item.id} className="rounded-3xl border border-[color:var(--border)] bg-white/90 p-4 text-sm text-[color:var(--muted)]">
-                  <LocalizedText id={item.id} en={item.en} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </AnimatedReveal>
-      </section>
+      {/* Case study format and Suggested additions panels removed per request */}
     </>
   );
 }

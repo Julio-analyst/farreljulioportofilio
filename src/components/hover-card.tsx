@@ -12,7 +12,8 @@ export default function HoverCard({ children, className = "" }: HoverCardProps) 
 
   const variants = {
     rest: { y: 0, scale: 1, boxShadow: "0 0px 0px rgba(0,0,0,0)" },
-    hover: { y: -6, scale: 1.02, boxShadow: "0 20px 40px rgba(2,6,23,0.08)" },
+    hover: { y: -6, scale: 1.03, boxShadow: "0 20px 40px rgba(2,6,23,0.08)" },
+    tap: { y: -2, scale: 0.985, boxShadow: "0 12px 24px rgba(2,6,23,0.08)" },
   };
 
   return (
@@ -21,7 +22,7 @@ export default function HoverCard({ children, className = "" }: HoverCardProps) 
       animate="rest"
       whileHover={reduceMotion ? "rest" : "hover"}
       whileFocus={reduceMotion ? "rest" : "hover"}
-      whileTap="rest"
+      whileTap={reduceMotion ? "rest" : "tap"}
       variants={variants}
       transition={{ type: "spring", stiffness: 320, damping: 28 }}
       tabIndex={0}

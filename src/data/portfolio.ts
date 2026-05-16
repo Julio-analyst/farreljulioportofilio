@@ -2,9 +2,9 @@ export const site = {
   name: "Farrel Julio Akbar",
   role: "Data Science | Data Engineering | AI & Automation | ML & Cloud Analytics",
   tagline:
-    "Membangun brand profesional yang rapi, informatif, dan siap tumbuh.",
+    "Dari Data Menuju Keputusan",
   taglineEn:
-    "Building a professional brand that is clean, informative, and ready to grow.",
+    "From Data to Decision",
   location: "Bogor, West Java, Indonesia",
   email: "farelrel12345@gmail.com",
   github: "https://github.com/Julio-analyst",
@@ -35,22 +35,14 @@ export const heroStats = [
 
 export const whatPeopleSayAboutMe = [
   {
-    title: "Clear communicator",
-    titleEn: "Clear communicator",
-    description: "Mampu menjelaskan kerja teknis dengan bahasa yang sederhana dan enak dibaca.",
-    descriptionEn: "Explains technical work in a simple, easy-to-read way.",
-  },
-  {
-    title: "Fast builder",
-    titleEn: "Fast builder",
-    description: "Cepat mengubah ide menjadi prototype yang bisa diuji dan dipresentasikan.",
-    descriptionEn: "Turns ideas into testable, presentable prototypes quickly.",
-  },
-  {
-    title: "Balanced thinker",
-    titleEn: "Balanced thinker",
-    description: "Menjaga keseimbangan antara analisis, engineering discipline, dan storytelling.",
-    descriptionEn: "Balances analysis, engineering discipline, and storytelling.",
+    title: "Recommendation — Asyraf Ilmansyah Hia",
+    titleEn: "Recommendation — Asyraf Ilmansyah Hia",
+    description:
+      "It was a pleasure working with Farrel during his internship. He consistently demonstrated a strong work ethic, eagerness to learn, and a positive attitude. Farrel completed his tasks with diligence and showed great potential for future roles. I truly enjoyed mentoring him and would gladly recommend him to any recruiter or organization looking for a reliable and capable team member. Wishing Farrel continued success in his career journey.\n\nThank you Farrel Julio !",
+    descriptionEn:
+      "It was a pleasure working with Farrel during his internship. He consistently demonstrated a strong work ethic, eagerness to learn, and a positive attitude. Farrel completed his tasks with diligence and showed great potential for future roles. I truly enjoyed mentoring him and would gladly recommend him to any recruiter or organization looking for a reliable and capable team member. Wishing Farrel continued success in his career journey.\n\nThank you Farrel Julio !",
+    issuer: "Asyraf Ilmansyah Hia",
+    issuerRole: "Data Analytics & AI Team Lead at Telkom Indonesia",
   },
 ];
 
