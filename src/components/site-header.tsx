@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowUpRight, Code2, Mail } from "lucide-react";
+import { ArrowUpRight, Code2, Mail, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { navLinks, site } from "@/data/portfolio";
@@ -81,6 +81,14 @@ export function SiteHeader() {
               </div>
             </div>
           </div>
+          <button
+            type="button"
+            onClick={() => setLang(lang === "en" ? "id" : "en")}
+            aria-label="Switch language"
+            className="sm:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-[color:var(--border)] bg-white text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-200 hover:text-[color:var(--accent)]"
+          >
+            <Globe className="h-4 w-4" />
+          </button>
           <Link
             href={site.github}
             target="_blank"
