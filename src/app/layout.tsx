@@ -16,11 +16,11 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Farrel Julio Akbar | Portfolio",
+    default: "Farrel Julio Akbar | Data & Technology Professional",
     template: "%s | Farrel Julio Akbar",
   },
   description:
-    "Portfolio bilingual white-blue dengan fokus AI, data pipelines, analytics, dan project showcase.",
+    "Portofolio profesional Farrel Julio Akbar: Data Analytics, Business Intelligence, Data Engineering, dan AI Automation dengan pengalaman di Bank Indonesia dan Telkom Indonesia.",
   icons: {
     icon: "/Farrellogo.png?v=2",
     shortcut: "/Farrellogo.png?v=2",

@@ -1,0 +1,95 @@
+
+--- PAGE 1 ---
+FARREL JULIO AKBAR 
+DATA ENGINEERING | DATA ANALYTICS | DATA SCIENCE 
+Big Data | AI & Automation | MLOps 
+Bogor, West Java, Indonesia | 081774160107 | farelrel12345@gmail.com 
+linkedin.com/in/farrel-julio-427143288 | github.com/Julio-analyst | farreljulio.xyz 
+PROFESSIONAL SUMMARY 
+Experience across data engineering, data analytics, and data science through roles in central banking and telecommunications. 
+Developed automated data pipelines, near real-time Change Data Capture systems, big data workflows, Early Warning Systems, time-
+series and forecasting analyses, RAG-based AI automation, and end-to-end MLOps workflows. Interested in applying data, AI, and 
+engineering solutions to digital banking, financial services, and economic analysis, with leadership experience coordinating teams of up to 
+27 members. 
+TECHNICAL SKILLS 
+Programming & Analytics: Python, R, SQL, Excel, Pandas, NumPy, EDA, data cleaning, statistical analysis 
+Data Engineering & Big Data: ETL/ELT, CDC, data replication, streaming, PostgreSQL, ClickHouse, MySQL, BigQuery, Kafka, Apache Flink, 
+PeerDB, Debezium, Airflow, Docker 
+Data Science & AI: Machine Learning, Deep Learning, NLP, RAG, time series, forecasting, PCA, volatility analysis, model evaluation 
+Automation & MLOps: n8n, Supabase, OpenAI, Groq, Streamlit, MLflow, DVC, Git, CI/CD, experiment tracking, model deployment and 
+monitoring 
+BI & System Monitoring: Power BI, Looker Studio, Grafana, Percona, Prometheus, Node Exporter 
+Banking & Economic Analytics: inflation, food-price monitoring, regional economic analysis, PDRB, business-cycle analysis, Early Warning 
+Systems 
+PROFESSIONAL EXPERIENCE 
+Bank Indonesia | Representative Office of Lampung Province May 2026 - Present 
+Data Science Intern | FPKP 
+• Analyzed inflation, food prices, regional growth, PDRB, and sectoral trends across 15 cities and regencies using Python, R, SQL, and 
+statistical and time-series methods. 
+• Developed an automated food-price monitoring and Early Warning System for 9 strategic commodities by transforming PIHPS data, 
+applying volatility-adjusted growth, weighted statistics, and PCA-based indicators, and delivering dashboards in Power BI and Looker 
+Studio. 
+• Built business-cycle prototypes using X-13 seasonal adjustment, Bry-Boschan, and Harding-Pagan methods to identify peaks, 
+troughs, expansions, contractions, and turning points in regional economic indicators. 
+• Supported economic-news sentiment analysis, survey validation, and forecasting exploration, translating technical outputs into 
+decision-ready insights for economic monitoring and policy recommendations. 
+PT Telekomunikasi Indonesia | Jakarta, Indonesia Jun 2025 - Dec 2025 
+Data Scientist Intern | Data Analytics, AI & Automation 
+• Developed an AI-powered RAG chatbot using n8n, Supabase, OpenAI, Groq, Google Sheets, and BigQuery, improving user and 
+administrator efficiency in accessing internal guidelines by approximately 30%. 
+• Built end-to-end AI automation covering chat ingestion, Google Drive knowledge-base vectorization, retrieval, orchestration, logging, 
+and integration across Telegram, Streamlit, and web platforms. 
+• Implemented a near real-time CDC pipeline from PostgreSQL to PostgreSQL using PeerDB, Debezium, and Kafka reducing 
+dependence on batch ETL processes. 
+• Developed CDC configurations with up to 2x faster synchronization and monitored latency, throughput, database performance, and 
+system reliability using Grafana and Percona. 
+Rajawali Academy | Bogor, Indonesia Jul 2024 - Dec 2024 
+IT Specialist Intern 
+• Built an automated assessment and scoring system using Google Sheets and Autocrat, reducing manual evaluation work and 
+improving operational efficiency. 
+• Supported warehouse data management and digital infrastructure through account creation, documentation of 15,000+ products, 
+websites, and operational workflows. 
+• Applied data-informed digital marketing across Facebook, Shopee, and TikTok, contributing to sales of more than 1,000 product units. 
+EDUCATION 
+Institut Teknologi Sumatera | Lampung, Indonesia Aug 2022 - Jun 2026 
+Bachelor of Data Science | GPA 3.00/4.00 
+Relevant Coursework: Big Data Analytics, Data Engineering, Cloud Computing, Machine Learning, Deep Learning, Databases and SQL, 
+Business Intelligence, Statistics, and Data Visualization. 
+Thesis: Performance Evaluation of PeerDB and Debezium in a Change Data Capture Simulation on Docker Using System Performance 
+Metrics. 
+SELECTED TECHNICAL PROJECTS 
+RAG Chatbot & AI Automation | 2025 
+• Built an AI-powered RAG chatbot for internal-guideline retrieval using n8n, Supabase, OpenAI, Groq, Google Sheets, BigQuery, 
+Telegram, and Streamlit. 
+• Automated knowledge-base ingestion and vectorization, retrieval, orchestration, logging, and multi-platform access, improving user 
+and administrator efficiency by approximately 30%. 
+CDC Performance Benchmarking: PeerDB vs Debezium | 2026 
+• Designed near real-time PostgreSQL-to- PostgreSQL CDC pipelines using PeerDB and Debezium, and Kafka across 5M to 80M rows 
+with five repetitions per scenario. 
+• Benchmarked end-to-end latency, throughput, CPU, RAM, scalability, and reliability on DigitalOcean and Docker, finding PeerDB 
+more efficient for smaller workloads and Debezium stronger for large continuous loads. 
+--- PAGE 2 ---
+Gender Voice Detection with MLOps | 2025 
+• Developed an end-to-end machine-learning workflow for voice-based gender classification using MLflow, DVC, GitHub Actions, 
+Docker, Flask, Prometheus, and Grafana. 
+• Integrated experiment tracking, data and model versioning, CI/CD, containerized deployment, and service monitoring to support 
+reproducible delivery. 
+Food Price Monitoring Dashboard & Early Warning System | 2026 
+• Developed an automated monitoring dashboard and Early Warning System for 9 strategic food commodities using PIHPS data, 
+CQGR, CAGR, monthly log returns, rolling volatility, volatility-adjusted growth, and weighted statistics. 
+• Constructed Q-IPA and A-IPA risk indicators with PCA-derived gamma weights and Normal, Watch, and Warning thresholds, 
+delivering results through Power BI and Looker Studio to support anomaly monitoring and intervention timing. 
+Additional Projects: iDis stock-information chatbot using Streamlit, WARMINDO sales dashboard, MySQL bookstore database, KNN-
+based house classification, and groundwater and temperature analysis. 
+Additional Organization Involvement: Staff, Data Science Student Association (SSD/Storage); Operations Staff, KM ITERA General 
+Election Committee. 
+LEADERSHIP EXPERIENCE 
+MAGENTA 22 | Chief Committee | Oct 2022 - Dec 2022: Led 5 divisions and 27 committee members to deliver an event for 140+ 
+participants with a 99% attendance rate. 
+First Gathering D'23 | Head of Field Division: Managed 15 field staff and coordinated event flow, safety, and participant engagement 
+for 250+ attendees. 
+DAMASKUS | Capo | Jan 2024 - Dec 2025: Led and coordinated student sports activities involving more than 200 participants. 
+ACHIEVEMENTS & ENGLISH PROFICIENCY 
+• Finalist, RASIO 8.0 Infographic Competition - Universitas Padjadjaran, 2024. 
+• Semifinalist, Enterns International Business Case Competition - Universitas Indonesia, 2024. 
+• Institutional TOEFL - Score 590. 

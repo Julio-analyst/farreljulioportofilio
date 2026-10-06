@@ -1,126 +1,149 @@
-import { BadgeCheck, Sparkles, Trophy } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Award, CheckCircle2, ExternalLink, Globe, GraduationCap, ShieldCheck, Sparkles, Trophy } from "lucide-react";
 
 import { AnimatedReveal } from "@/components/animated-reveal";
 import { PageHeading } from "@/components/page-heading";
 import { achievements, certificates } from "@/data/portfolio";
 import LocalizedText from "@/components/localized-text";
-import CertificatesGallery from "@/components/certificates-gallery";
-import HoverCard from "@/components/hover-card";
 
 export const metadata = {
-  title: "Achievement",
-  description: "Highlights, finalist status, and proof points from Farrel Julio Akbar.",
+  title: "Prestasi & Sertifikasi | Farrel Julio Akbar",
+  description: "Penghargaan kompetisi data nasional RASIO 8.0, semifinalis Enterns UI, TOEFL 590, dan sertifikasi terverifikasi Farrel Julio Akbar.",
 };
 
 export default function AchievementsPage() {
   return (
     <>
       <PageHeading
-        eyebrow={<LocalizedText id={"Achievement"} en={"Achievements"} />}
-        title={<LocalizedText id={"Proof points that support the story behind the portfolio."} en={"Proof points that support the story behind the portfolio."} />}
-        description={<LocalizedText id={"Halaman ini sengaja dibuat lebih ringkas dan berfokus pada pengakuan, pengaruh, dan signpost yang membuat profilmu lebih kredibel."} en={"This page focuses on recognition, impact, and signals that make the profile credible."} />}
+        eyebrow={<LocalizedText id="Pencapaian Resmi" en="Official Honors" />}
+        title={
+          <LocalizedText
+            id="Prestasi kompetisi, kemahiran bahasa, dan kredensial terverifikasi."
+            en="Competition honors, language proficiency, and verified credentials."
+          />
+        }
+        description={
+          <LocalizedText
+            id="Validasi eksternal terhadap kemampuan analitik, pemecahan masalah bisnis, data storytelling, serta sertifikasi teknis."
+            en="External validation of analytical competence, strategic business problem-solving, data storytelling, and technical skills."
+          />
+        }
       />
 
-      <section className="grid gap-4 md:grid-cols-3">
-        {achievements.map((item, index) => (
-          <AnimatedReveal key={item.title} delay={index * 0.08}>
-            <div className="glass-card h-full rounded-[2rem] p-6">
-              <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-                <Trophy className="h-4 w-4" />
-                <LocalizedText id={item.type} en={(item as any).typeEn} />
-              </div>
-              <h2 className="mt-4 text-xl font-semibold tracking-tight text-slate-950"><LocalizedText id={item.title} en={(item as any).titleEn} /></h2>
-              <p className="mt-3 text-sm leading-6 text-[color:var(--muted)]"><LocalizedText id={item.description} en={(item as any).descriptionEn} /></p>
-            </div>
-          </AnimatedReveal>
-        ))}
-      </section>
-
-      <section className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr]">
+      {/* Competitions and Honors */}
+      <section className="space-y-6">
         <AnimatedReveal>
-          <div className="glass-card h-full rounded-[2rem] p-6">
-            <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-              <BadgeCheck className="h-4 w-4" />
-              <LocalizedText id={"Why this section matters"} en={"Why this section matters"} />
-            </div>
-            <p className="mt-4 text-sm leading-7 text-[color:var(--muted)]">
-              <LocalizedText id={"Pencapaian bukan cuma untuk pamer. Di portfolio, achievement membantu recruiter atau collaborator melihat sinyal kualitas dalam waktu singkat."} en={"Achievements are not just for show. In a portfolio, they help recruiters or collaborators see quality signals quickly."} />
-            </p>
+          <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[color:var(--accent)]">
+            <Trophy className="h-4 w-4" />
+            <LocalizedText id="Prestasi Kompetisi & Kemahiran" en="Competitions & Honors" />
           </div>
+          <h2 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">
+            <LocalizedText id="Hasil Kompetisi & Pengakuan Eksternal" en="Competition Results & External Recognition" />
+          </h2>
         </AnimatedReveal>
 
-        <AnimatedReveal delay={0.1}>
-          <div className="glass-card h-full rounded-[2rem] p-6">
-            <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-              <Sparkles className="h-4 w-4" />
-              <LocalizedText id={"Future proof section"} en={"Future proof section"} />
-            </div>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {[
-                { id: "Certificates", en: "Certificates" },
-                { id: "Hackathon wins", en: "Hackathon wins" },
-                { id: "Conference or community recognition", en: "Conference or community recognition" },
-                { id: "Publication or article highlights", en: "Publication or article highlights" },
-              ].map((item) => (
-                <div key={item.id} className="rounded-3xl border border-[color:var(--border)] bg-white/90 p-4 text-sm text-[color:var(--muted)]">
-                  <LocalizedText id={item.id} en={item.en} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </AnimatedReveal>
-      </section>
-
-      <section className="grid gap-6">
-        <AnimatedReveal>
-          <div className="glass-card h-full rounded-[2rem] p-6 sm:p-7">
-            <div className="flex items-center gap-2 text-sm font-medium text-[color:var(--accent)]">
-              <BadgeCheck className="h-4 w-4" />
-              <LocalizedText id={"Certificates"} en={"Certificates"} />
-            </div>
-            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-slate-950">
-              <LocalizedText id={"Official certificates and learning proof"} en={"Official certificates and learning proof"} />
-            </h2>
-            <p className="mt-4 text-sm leading-7 text-[color:var(--muted)]">
-              <LocalizedText id={"Bagian ini menampung sertifikasi resmi, dan nanti file PDF dapat ditambahkan tanpa mengubah struktur kartu."} en={"This section holds the official certifications, and PDF files can later be added without changing the card structure."} />
-            </p>
-          </div>
-        </AnimatedReveal>
-
-        <AnimatedReveal delay={0.06}>
-          <div className="glass-card h-full rounded-[2rem] p-6 sm:p-7">
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {certificates.map((item) => (
-                <HoverCard key={item.title} className="rounded-3xl border border-[color:var(--border)] bg-white/90 p-5 shadow-sm transition-all duration-300">
-                  <div className="flex items-start justify-between gap-3">
-                    <p className="text-sm font-medium text-[color:var(--accent)]">
-                      <LocalizedText id={item.issuer} en={item.issuerEn} />
-                    </p>
-                    <span className="rounded-full bg-[color:var(--accent-soft)] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[color:var(--accent)]">
-                      <LocalizedText id={item.published ?? ""} en={item.published ?? ""} />
+        <div className="grid gap-6 md:grid-cols-3">
+          {achievements.map((item, idx) => (
+            <AnimatedReveal key={idx} delay={idx * 0.08}>
+              <div className="glass-card flex h-full flex-col justify-between rounded-[2rem] border border-[color:var(--border)] bg-white p-6 sm:p-7 shadow-sm transition-all hover:border-blue-200 hover:shadow-md">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-[color:var(--accent-soft)] px-3 py-1 text-xs font-semibold text-[color:var(--accent)]">
+                      <Trophy className="h-3 w-3" />
+                      <LocalizedText id={item.type} en={item.typeEn} />
                     </span>
+                    <span className="text-xs font-semibold text-slate-500">{item.year}</span>
                   </div>
-                  <h3 className="mt-2 text-lg font-semibold leading-6 text-slate-950">
-                    <LocalizedText id={item.title} en={item.titleEn} />
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[color:var(--muted)]">
+
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-950">
+                      <LocalizedText id={item.title} en={item.titleEn} />
+                    </h3>
+                    <p className="text-xs font-medium text-[color:var(--muted)] mt-1">
+                      {item.organizer}
+                    </p>
+                  </div>
+
+                  <p className="text-xs sm:text-sm leading-relaxed text-slate-600">
                     <LocalizedText id={item.description} en={item.descriptionEn} />
                   </p>
-                  <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
-                    <LocalizedText id={item.credentialId ?? ""} en={item.credentialId ?? ""} />
+                </div>
+
+                {item.relatedProject && (
+                  <div className="mt-5 pt-3 border-t border-slate-100">
+                    <Link
+                      href="https://github.com/Julio-analyst/impact-of-ai-asean"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[color:var(--accent)] hover:underline"
+                    >
+                      <LocalizedText id="Lihat Proyek Infografis" en="View Infographic Project" />
+                      <ExternalLink className="h-3.5 w-3.5" />
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </AnimatedReveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Curated Technical Certifications */}
+      <section className="space-y-6">
+        <AnimatedReveal>
+          <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[color:var(--accent)]">
+            <ShieldCheck className="h-4 w-4" />
+            <LocalizedText id="Sertifikasi Terverifikasi" en="Verified Certifications" />
+          </div>
+          <h2 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-slate-950">
+            <LocalizedText id="Kredensial Resmi Bidang Data & Cloud" en="Official Data & Cloud Credentials" />
+          </h2>
+          <p className="mt-1 text-sm text-[color:var(--muted)]">
+            <LocalizedText
+              id="Sertifikasi kompetensi terpilih dari lembaga kredibel (Google Cloud dan DQLab) dengan ID verifikasi resmi."
+              en="Curated competency credentials from trusted institutions (Google Cloud & DQLab) with official verification IDs."
+            />
+          </p>
+        </AnimatedReveal>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {certificates.map((cert, idx) => (
+            <AnimatedReveal key={idx} delay={idx * 0.06}>
+              <div className="glass-card flex h-full flex-col justify-between rounded-3xl border border-[color:var(--border)] bg-white p-5 sm:p-6 shadow-xs transition-all hover:border-blue-200 hover:shadow-md">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-[color:var(--accent)]">{cert.issuer}</span>
+                    <span className="text-slate-500">{cert.published}</span>
+                  </div>
+
+                  <h3 className="text-base font-bold text-slate-950">
+                    <LocalizedText id={cert.title} en={cert.titleEn} />
+                  </h3>
+
+                  <p className="text-xs leading-relaxed text-slate-600">
+                    <LocalizedText id={cert.description} en={cert.descriptionEn} />
                   </p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {item.skills?.map((skill) => (
-                      <span key={skill} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-slate-100 space-y-2">
+                  <div className="text-[11px] font-mono text-slate-500 truncate">
+                    ID: {cert.credentialId}
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {cert.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="rounded-full bg-slate-50 px-2 py-0.5 text-[10px] font-medium text-slate-700 border border-slate-200/60"
+                      >
                         {skill}
                       </span>
                     ))}
                   </div>
-                </HoverCard>
-              ))}
-            </div>
-          </div>
-        </AnimatedReveal>
+                </div>
+              </div>
+            </AnimatedReveal>
+          ))}
+        </div>
       </section>
     </>
   );
