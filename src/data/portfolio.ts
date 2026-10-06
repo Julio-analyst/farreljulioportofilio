@@ -49,8 +49,8 @@ export const site = {
   cvPath: "/farrel-julio-cv.pdf",
   avatarUrl: "/profile.jpg",
   avatarTransparent: "/profile-transparent.png",
-  bio: "Lulusan Sains Data Institut Teknologi Sumatera (IPK 3,00) dengan pengalaman lintas industri di Bank Indonesia dan Telkom Indonesia. Berfokus pada business intelligence, data engineering, otomasi alur kerja, dan solusi AI yang teruji.",
-  bioEn: "Data Science graduate from Institut Teknologi Sumatera (GPA 3.00) with industry experience at Bank Indonesia and Telkom Indonesia. Focused on business intelligence, data engineering, workflow automation, and production-tested AI solutions.",
+  bio: "Lulusan Sains Data Institut Teknologi Sumatera dengan pengalaman lintas industri di Bank Indonesia dan Telkom Indonesia. Berfokus pada business intelligence, data engineering, otomasi alur kerja, dan solusi AI yang teruji.",
+  bioEn: "Data Science graduate from Institut Teknologi Sumatera with industry experience at Bank Indonesia and Telkom Indonesia. Focused on business intelligence, data engineering, workflow automation, and production-tested AI solutions.",
 };
 
 export const navLinks = [
@@ -87,7 +87,7 @@ export const institutionBadges = [
     name: "Bank Indonesia",
     sub: "Data Science Intern (FPKP)",
     subEn: "Data Science Intern (FPKP)",
-    logo: "/logo-bank-indonesia.png",
+    logo: "/logo-bank-indonesia-transparent.png",
     period: "Mei 2026 – Sekarang",
     periodEn: "May 2026 – Present",
   },
@@ -178,13 +178,13 @@ export const caseStudies: ProjectCaseStudy[] = [
     solution: "Membangun pipeline data end-to-end yang mengambil data harian PIHPS, melakukan validasi dan pembersihan otomatis, menghitung Compound Quarterly Growth Rate (CQGR), CAGR, volatilitas bergulir, serta indikator kuartalan (Q-IPA) dan tahunan (A-IPA). Pembobotan gamma berbasis Principal Component Analysis (PCA) digunakan untuk menyusun skor komposit status: Normal (<0,5), Waspada (0,5–<1,0), dan Peringatan (≥1,0).",
     solutionEn: "Engineered an end-to-end data pipeline processing daily PIHPS data, automated validation, calculating Compound Quarterly Growth Rate (CQGR), CAGR, rolling volatility, quarterly IPA, and annual IPA. PCA-derived gamma weights produce a composite anomaly score categorized into Normal (<0.5), Alert (0.5–<1.0), and Warning (≥1.0).",
     personalContribution: [
-      "Mengembangkan prototype analitik dan formula kalkulasi statistik (volatility-adjusted growth, Q-IPA, A-IPA, pembobotan PCA) secara mandiri menggunakan Python dan Excel.",
+      "Mengembangkan prototype analitik dan formula kalkulasi statistik dari FAO (volatility-adjusted growth, Q-IPA, A-IPA, pembobotan PCA) secara mandiri menggunakan Python dan Excel.",
       "Merancang struktur penyimpanan data terpusat dan logika transformasi data PIHPS untuk 9 komoditas strategis.",
       "Mendesain panel visualisasi dashboard di Power BI dan Looker Studio untuk pemantauan tren, ranking risiko harga, dan heatmap harian status anomali.",
       "Menyajikan hasil analisis kepada analis senior Bank Indonesia guna mendukung rekomendasi kebijakan waktu intervensi pasar.",
     ],
     personalContributionEn: [
-      "Independently engineered the statistical formulas and analytical prototypes (volatility-adjusted growth, Q-IPA, A-IPA, PCA gamma weighting) using Python and Excel.",
+      "Independently engineered the FAO statistical formulas and analytical prototypes (volatility-adjusted growth, Q-IPA, A-IPA, PCA gamma weighting) using Python and Excel.",
       "Designed the centralized data storage schema and automated PIHPS transformation logic for 9 strategic commodities.",
       "Created dashboard panels in Power BI and Looker Studio displaying price trends, risk rankings, and daily anomaly status heatmaps.",
       "Presented analytical findings to senior economists to support market intervention timing and policy recommendations.",

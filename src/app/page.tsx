@@ -67,11 +67,11 @@ export default function Home() {
                   key={idx}
                   className="flex items-center gap-3 rounded-2xl border border-[color:var(--border)] bg-white/80 p-3 shadow-xs transition-all hover:border-blue-200 hover:bg-white"
                 >
-                  <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-100 bg-white shadow-xs">
+                  <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-100 bg-white p-1 shadow-xs">
                     <img
                       src={badge.logo}
                       alt={badge.name}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-contain"
                     />
                   </div>
                   <div className="min-w-0">
@@ -112,19 +112,19 @@ export default function Home() {
                 </div>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 border border-emerald-200/60">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <LocalizedText id="Siap Berkontribusi" en="Open to Work" />
+                  <LocalizedText id="Siap Berkontribusi" en="Open to Opportunities" />
                 </span>
               </div>
 
               <div className="flex flex-wrap gap-2 text-xs text-slate-600 pt-2 border-t border-slate-100">
                 <span className="rounded-full bg-white px-2.5 py-1 border border-slate-200">
-                  📍 {site.location}
+                  {site.location}
                 </span>
                 <span className="rounded-full bg-white px-2.5 py-1 border border-slate-200">
-                  🎓 IPK 3,00 / 4,00
+                  IPK 3,00 / 4,00
                 </span>
                 <span className="rounded-full bg-white px-2.5 py-1 border border-slate-200">
-                  🌐 TOEFL 590
+                  TOEFL 590
                 </span>
               </div>
             </div>
@@ -293,16 +293,16 @@ export default function Home() {
       {/* Contact Banner */}
       <section>
         <AnimatedReveal>
-          <div className="glass-card rounded-[2.5rem] border border-[color:var(--border)] bg-gradient-to-r from-blue-600 to-blue-700 p-8 sm:p-12 text-white shadow-xl shadow-blue-500/10">
+          <div className="rounded-[2.5rem] border border-blue-500/30 bg-blue-700 p-8 text-white shadow-xl shadow-blue-500/20 sm:p-12">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl space-y-3">
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
+                <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   <LocalizedText
                     id="Siap Berkolaborasi dan Menghadirkan Dampak Nyata"
                     en="Ready to Collaborate and Deliver Meaningful Impact"
                   />
                 </h2>
-                <p className="text-sm sm:text-base text-blue-100 leading-relaxed">
+                <p className="text-sm leading-relaxed text-blue-50 sm:text-base">
                   <LocalizedText
                     id="Terbuka untuk peluang karier dan proyek di bidang Data Analytics, BI, Data Engineering, dan AI. Mari berdiskusi!"
                     en="Open to career opportunities and projects across Data Analytics, BI, Data Engineering, and AI. Let's connect!"
