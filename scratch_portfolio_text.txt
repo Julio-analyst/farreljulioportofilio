@@ -1,0 +1,214 @@
+
+--- PAGE 1 ---
+PORT
+FOLIO
+DATA SCIENCE & ENGINEERING
+Data Analytics | Data Engineering
+AI & Automation | MLOps
+Presented By: Farrel Julio Akbar
+--- PAGE 2 ---
+HELLO,  I'M FARREL JULIO AKBAR
+Data professional with hands-on experience in data engineering, data
+analytics, data science, AI, and workflow automation across
+telecommunications and central banking. Experienced in developing
+near real-time data pipelines, RAG-based applications, machine
+learning workflows, monitoring dashboards, and data-driven decision-
+support systems.
+linkedin.com/in/farrel-julio-427143288 github.com/Julio-analystfarelrel12345@gmail.com
+DATA ENGINEERING | DATA ANALYTICS | DATA SCIENCE
+AI, AUTOMATION & MLOPS
+--- PAGE 3 ---
+Big Data Analytics 
+Data Engineering
+Machine Learning
+Relevant Coursework
+ EDUCATION
+Bachelor of Data Science | 2022–2026
+GPA: 3.00/4.00
+“Performance Evaluation of PeerDB and Debezium in Docker-
+Based Change Data Capture Simulations”
+Benchmarked near real-time PostgreSQL-to-ClickHouse CDC
+pipelines across workloads of 5 to 80 million rows. Evaluated
+latency, throughput, CPU utilization, memory utilization, scalability,
+and reliability using Docker and DigitalOcean.
+Institut Teknologi Sumatera
+Final Project
+Deep Learning
+Database Systems 
+Cloud Computing
+Business Intelligence 
+Statistics
+Data Visualization
+--- PAGE 4 ---
+TECHNICAL EXPERTISE
+Implementing experiment tracking, data and model versioning,
+CI/CD, containerized deployment, and service monitoring using
+MLflow, DVC, GitHub Actions, Docker, Flask, Prometheus, and
+Grafana.
+Developing machine learning, deep learning, NLP, RAG, and
+analytical modeling solutions, including feature engineering, model
+evaluation, error analysis, and AI workflow automation.
+Data Science & Artificial Intelligence
+Developing ETL/ELT workflows, near real-time Change Data
+Capture pipelines, streaming architectures, and analytical data
+layers using PostgreSQL, ClickHouse, BigQuery, PeerDB, Debezium,
+Kafka, Flink, Airflow, and Docker.
+Data Engineering & Big Data
+Performing data cleaning, exploratory analysis, statistical analysis,
+time-series analysis, forecasting, and dashboard development
+using Python, R, SQL, Power BI, Tableau, and Looker Studio.
+Data Analytics & Business Intelligence
+linkedin.com/in/farrel-julio-427143288 github.com/Julio-analyst farelrel12345@gmail.com
+MLOps & Monitoring
+--- PAGE 5 ---
+WORKEXPERIENCE
+Developed a RAG-based chatbot and automated
+knowledge-retrieval workflow using n8n,
+Supabase, OpenAI, Groq, BigQuery, and Streamlit.
+Built near real-time PostgreSQL-to-ClickHouse
+CDC pipelines using PeerDB, Debezium, Kafka, and
+Apache Flink.
+Monitored pipeline latency, throughput, database
+performance, and system reliability using Grafana
+and Percona.
+Developed an automated assessment and
+scoring workflow using Google Sheets and
+Autocrat.
+Supported digital infrastructure, website
+operations, and the management of more
+than 15,000 product records.
+Applied data and digital tools to support
+operational efficiency and online sales
+activities.
+Data Scientist Intern at Telkom Indonesia      
+2025                      
+IT Specialist Intern at Rajawali Academy
+2024                            
+Data Science Intern at CENTRAL BANK INDONESIA 
+May 2026 - Present
+Analyzed inflation, food prices, GRDP, sectoral
+developments, survey results, and regional economic
+indicators across 15 regencies and cities in Lampung.
+Developed an automated Food Price Monitoring
+Dashboard and Early Warning System for nine
+strategic commodities using PIHPS data, statistical
+indicators, Python, Power BI, and Looker Studio.
+Conducted time-series, business-cycle, and
+forecasting analysis to support regional economic
+monitoring and data-driven assessment.
+--- PAGE 6 ---
+GENDER VOICEDETECTION END-TO-ENDMLOPS PLATFORM
+End-to-end MLOps platform for gender
+classification from voice recordings.
+The system processes audio into MFCC
+features, supports multiple deep
+learning models, and enables real-time
+inference with automated training,
+tracking, and deployment.
+GitHub: github.com/Julio-analyst/gender-voice-detection
+Live App: huggingface.co/spaces/Farrel-Akbar/gendervoicedetection
+Tech Stack
+Deep Learning: TensorFlow, Keras
+(RNN, LSTM, GRU)
+Audio Processing: Librosa, MFCC
+MLOps: MLflow, DVC, GitHub Actions
+Backend & UI: FastAPI, Gradio
+Deployment: Docker, Hugging Face
+Spaces
+Deep Learning–based audio classification with production
+MLOps pipeline
+--- PAGE 7 ---
+DEBEZIUM CDCMIRRORING WITHGRAFANAMONITORING:
+Designed and implemented a Change
+Data Capture (CDC) pipeline using
+Debezium to mirror PostgreSQL data
+changes in real time.
+The system captures insert, update, and
+delete events from the source database,
+streams them to the target database,
+and provides real-time monitoring and
+performance insights through Grafana
+dashboards.
+GitHub: github.com/Julio-analyst/debezium-cdc-postgres
+Tech Stack
+CDC Engine: Debezium
+Databases: PostgreSQL (Source &
+Target)
+Streaming & Connectors: Kafka /
+Kafka Connect 
+Monitoring: Grafana
+Metrics & Observability: PostgreSQL
+Metrics / Custom Queries
+Environment: Docker
+Real-time PostgreSQL replication and observability
+pipeline
+--- PAGE 8 ---
+RAG CHATBOTAUTOMATION  USING N8NWORKFLOW
+Designed and implemented an automated RAG-based chatbot
+using n8n to handle document ingestion, vectorization, and
+conversational AI workflows.
+The system integrates cloud storage, vector databases, and large
+language models to deliver contextual, accurate responses while
+supporting scalable automation and monitoring.
+Tech Stack
+LLM & RAG: OpenAI, Groq
+Vector Database: Pinecone
+Workflow Automation: n8n
+Data Ingestion: Google Drive, Google Sheets
+Embeddings & Indexing: OpenAI Embeddings
+Storage & Analytics: BigQuery, Supabase
+End-to-end Retrieval-Augmented Generation chatbot
+with automated data ingestion
+--- PAGE 9 ---
+FOOD PRICE MONITORING &EARLY WARNING SYSTEM
+Developed an integrated food price monitoring and Early Warning System using PIHPS data for
+nine strategic commodities. The system processes updated price data through validation,
+cleaning, transformation, and structured storage before distributing it into two analytical panels.
+The Food Price Monitoring panel presents price levels, movements, historical trends, and
+commodity comparisons, while the Early Warning System applies statistical growth and volatility
+indicators to calculate the Indicator of Price Anomalies and classify emerging price risks.
+Data Source: PIHPS
+Data Processing: Python, Pandas, NumPy
+Statistical Methods: CQGR, CAGR, Rolling Volatility,
+PCA, IPA
+Visualization: Power BI, Looker Studio
+Outputs: Food Price Monitoring Panel and EWS
+Risk Panel
+Integrated PIHPS-based price monitoring and decision-support system. 
+Project overview
+The Food Price Monitoring panel provides an
+interactive view of price developments across
+commodities and periods. It enables users to monitor
+current price levels, daily and monthly movements,
+historical trends, and unusual changes through
+filters, charts, and summary indicators.
+Monitoring Pangan
+The Early Warning System aggregates daily
+PIHPS data into monthly observations and
+calculates CQGR, CAGR, rolling volatility,
+volatility-adjusted growth, quarterly IPA, and
+annual IPA. PCA-derived weights are applied to
+generate a composite IPA score, which
+classifies commodity conditions into Normal,
+Alert, and Warning levels for early risk
+monitoring.
+Early Warning System
+--- PAGE 10 ---
+PROJECTREPOSITORY
+Explore all my projects and technical work on GitHub and LinkedIn.
+https://github.com/Julio-analyst https://www.linkedin.com/in/farrel-julio-427143288/
+--- PAGE 11 ---
+THANK
+YOU
+DATA SCIENCE & ENGINEERING
+Data Analytics | AI & MLOps
+Farrel Julio Akbar
+Thank you for reviewing my portfolio.
+ I would be happy to discuss my work and experiences further.
+Linkedin
+GitHub 
+Email   
+: linkedin.com/in/farrel-julio-427143288
+: github.com/Julio-analyst
+: farelrel12345@gmail.com
+Portfolio : farreljulio.xyz
